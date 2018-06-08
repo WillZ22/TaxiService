@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sos:InsertObservation xmlns:sos="http://www.opengis.net/sos/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0.0" service="SOS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd          http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sml="http://www.opengis.net/sensorML/1.0.1" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:sf="http://www.opengis.net/sampling/2.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:om="http://www.opengis.net/om/2.0">
+	<!-- multiple offerings are possible -->
+	<sos:offering>urn:ogc:object:feature:sensorteam:offering1</sos:offering>
+	<sos:observation>
+		<om:OM_Observation gml:id="o1">
+			<om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_ComplexObservation"/>
+			<om:phenomenonTime>
+				<gml:TimeInstant gml:id="phenomenonTime">
+					<gml:timePosition>2000-11-19T17:46:15.000+00:00</gml:timePosition>
+				</gml:TimeInstant>
+			</om:phenomenonTime>
+			<om:resultTime>
+				<gml:TimeInstant gml:id="resultTime">
+					<gml:timePosition>2020-11-19T13:50:00+02:00</gml:timePosition>
+				</gml:TimeInstant>
+			</om:resultTime>
+			<om:procedure xlink:href="urn:ogc:object:feature:sensorwebteam:taxi1"/>
+			<om:observedProperty xlink:href="urn:ogc:def:property:OGC:2.0:observableproperty_1"/>
+			<om:featureOfInterest>
+				<sams:SF_SpatialSamplingFeature gml:id="ssf_test_feature_9">
+					<gml:identifier codeSpace="">urn:ogc:object:feature:sensorteam:featureOfInterest1</gml:identifier>
+					<gml:name>52°North</gml:name>
+					<sf:type xlink:href="http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingPoint"/>
+					<sf:sampledFeature xlink:href="http://www.52north.org/test/featureOfInterest/1"/>
+					<sams:shape>
+						<gml:Point gml:id="test_feature_9">
+							<gml:pos srsName="http://www.opengis.net/def/crs/EPSG/0/4326">51.935101100104916 7.651968812254194</gml:pos>
+						</gml:Point>
+					</sams:shape>
+				</sams:SF_SpatialSamplingFeature>
+			</om:featureOfInterest>
+			<om:result xsi:type="swe:DataRecordPropertyType">
+				<swe:DataRecord>
+					<swe:field name="medallion">
+						<swe:Text definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:medallion">
+							<swe:value>11</swe:value>
+						</swe:Text>
+					</swe:field>
+					<swe:field name="hack_license">
+						<swe:Text definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:hack_license">
+							<swe:value>11</swe:value>
+						</swe:Text>
+					</swe:field>
+					<swe:field name="vendor_id">
+						<swe:Text definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:vendor_id">
+							<swe:value>11</swe:value>
+						</swe:Text>
+					</swe:field>
+					<swe:field name="rate_code">
+						<swe:Text definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:rate_code">
+							<swe:value>11</swe:value>
+						</swe:Text>
+					</swe:field>
+					<swe:field name="store_and_fwd_flag">
+						<swe:Boolean definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:store_and_fwd_flag">
+							<swe:value>true</swe:value>
+						</swe:Boolean>
+					</swe:field>
+					<swe:field name="passenger_count">
+						<swe:Count definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:passenger_count">
+							<swe:value>11</swe:value>
+						</swe:Count>
+					</swe:field>
+					<swe:field name="trip_time_in_secs">
+						<swe:Quantity definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:trip_distance">
+							<swe:uom code="secs"/>
+							<swe:value>11</swe:value>
+						</swe:Quantity>
+					</swe:field>
+					<swe:field name="trip_distance">
+						<swe:Quantity definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:trip_distance">
+							<swe:uom code="km"/>
+							<swe:value>11</swe:value>
+						</swe:Quantity>
+					</swe:field>
+					<swe:field name="pickup_longitude">
+						<swe:Quantity definition="urn:ogc:def:crs:EPSG::4326">
+							<swe:uom code="deg"/><swe:value>11</swe:value>
+						</swe:Quantity>
+					</swe:field>
+					<swe:field name="pickup_attitude">
+						<swe:Quantity definition="urn:ogc:def:crs:EPSG::4326">
+							<swe:uom code="deg"/><swe:value>11</swe:value>
+						</swe:Quantity>
+					</swe:field>
+					<swe:field name="dropoff_longitude">
+						<swe:Quantity definition="urn:ogc:def:crs:EPSG::4326">
+							<swe:uom code="deg"/><swe:value>11</swe:value>
+						</swe:Quantity>
+					</swe:field>
+					<swe:field name="dropoff_attitude">
+						<swe:Quantity definition="urn:ogc:def:crs:EPSG::4326">
+							<swe:uom code="deg"/><swe:value>11</swe:value>
+						</swe:Quantity>
+					</swe:field>					
+				</swe:DataRecord>
+			</om:result>
+		</om:OM_Observation>
+	</sos:observation>
+</sos:InsertObservation>

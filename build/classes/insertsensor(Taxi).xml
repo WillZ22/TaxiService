@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swes:InsertSensor xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0.0" service="SOS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sosInsertSensor.xsd   http://www.opengis.net/swes/2.0 http://schemas.opengis.net/swes/2.0/swes.xsd" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:sos="http://www.opengis.net/sos/2.0">
+	<swes:procedureDescriptionFormat>http://www.opengis.net/sensorml/2.0</swes:procedureDescriptionFormat>
+	<swes:procedureDescription>
+		<sml:PhysicalSystem gml:id="taxi1">
+			<!--Unique identifier -->
+			<gml:identifier codeSpace="uniqueID">urn:ogc:object:feature:sensorwebteam:taxi1</gml:identifier>
+			<sml:identification>
+				<sml:IdentifierList>
+					<sml:identifier>
+						<sml:Term definition="urn:ogc:def:identifier:OGC:1.0:longName">
+							<sml:label>longName</sml:label>
+							<sml:value>Sensor Web Team Taxi Simulation Sensor
+							</sml:value>
+						</sml:Term>
+					</sml:identifier>
+					<sml:identifier>
+						<sml:Term definition="urn:ogc:def:identifier:OGC:1.0:shortName">
+							<sml:label>shortName</sml:label>
+							<sml:value>Taxi</sml:value>
+						</sml:Term>
+					</sml:identifier>
+				</sml:IdentifierList>
+			</sml:identification>
+			<sml:capabilities name="offerings">
+				<sml:CapabilityList>
+					<!-- Special capabilities used to specify offerings. -->
+					<!-- Parsed and removed during InsertSensor/UpdateSensorDescription, 
+					 added during DescribeSensor. -->
+					<!-- Offering is generated if not specified. -->
+					<sml:capability name="offeringID">
+						<swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+							<swe:label>Test Offering for taxi1</swe:label>
+							<swe:value>urn:ogc:object:feature:sensorteam:offering1</swe:value>
+						</swe:Text>
+					</sml:capability>
+				</sml:CapabilityList>
+			</sml:capabilities>
+			<sml:featuresOfInterest>
+				<sml:FeatureList definition="http://www.opengis.net/def/featureOfInterest/identifier">
+					<swe:label>featuresOfInterest</swe:label>
+					<sml:feature xlink:href="urn:ogc:object:feature:sensorteam:featureOfInterest1"/>
+				</sml:FeatureList>
+			</sml:featuresOfInterest>
+			<sml:inputs>
+				<sml:InputList>
+					<sml:input name="unknow">
+						<sml:ObservableProperty definition="urn:ogc:def:property:OGC:2.0:unknow"/>
+					</sml:input>
+				</sml:InputList>
+			</sml:inputs>
+			<sml:outputs>
+				<sml:OutputList>
+					<sml:output name="observable_Property_1">
+						<swe:DataRecord>
+							<swe:field name="medallion">
+								<swe:Text definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:medallion"/>
+							</swe:field>
+							<swe:field name="hack_license">
+								<swe:Text definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:hack_license"/>
+							</swe:field>
+							<swe:field name="vendor_id">
+								<swe:Text definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:vendor_id"/>
+							</swe:field>
+							<swe:field name="rate_code">
+								<swe:Text definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:rate_code"/>
+							</swe:field>
+							<swe:field name="store_and_fwd_flag">
+								<swe:Boolean definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:store_and_fwd_flag"/>
+							</swe:field>
+							
+							
+							<swe:field name="passenger_count">
+								<swe:Count definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:passenger_count"/>
+							</swe:field>
+							<swe:field name="trip_time_in_secs">
+								<swe:Quantity definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:trip_distance">
+									<swe:uom code="secs"/>
+								</swe:Quantity>
+							</swe:field>
+							<swe:field name="trip_distance">
+								<swe:Quantity definition="urn:ogc:def:property:OGC:2.0:observableproperty_1:trip_distance">
+									<swe:uom code="km"/>
+								</swe:Quantity>
+							</swe:field>
+							
+							<swe:field name="pickup_longitude">
+								<swe:Quantity definition="urn:ogc:def:crs:EPSG::4326">
+									<swe:uom code="deg"/>
+								</swe:Quantity>
+							</swe:field>	
+
+
+							<swe:field name="pickup_attitude">
+								<swe:Quantity definition="urn:ogc:def:crs:EPSG::4326">
+									<swe:uom code="deg"/>
+								</swe:Quantity>
+							</swe:field>
+							
+							
+							<swe:field name="dropoff_longitude">
+								<swe:Quantity definition="urn:ogc:def:crs:EPSG::4326">
+									<swe:uom code="deg"/>
+								</swe:Quantity>
+							</swe:field>
+							
+							
+							<swe:field name="dropoff_attitude">
+								<swe:Quantity definition="urn:ogc:def:crs:EPSG::4326">
+									<swe:uom code="deg"/>
+								</swe:Quantity>
+							</swe:field>
+							
+							
+						</swe:DataRecord>
+					</sml:output>
+				</sml:OutputList>
+			</sml:outputs>
+		</sml:PhysicalSystem>
+	</swes:procedureDescription>
+	<!-- multiple values possible -->
+	<swes:observableProperty>urn:ogc:def:property:OGC:2.0:observableproperty_1</swes:observableProperty>
+	<swes:metadata>
+		<sos:SosInsertionMetadata>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_ComplexObservation</sos:observationType>
+			<!-- multiple values possible -->
+			<sos:featureOfInterestType>http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingPoint</sos:featureOfInterestType>
+		</sos:SosInsertionMetadata>
+	</swes:metadata>
+</swes:InsertSensor>
